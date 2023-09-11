@@ -14,14 +14,14 @@ const ListItem: React.FC<ListItemProps> = ({image, name, href}) => {
 
     const router = useRouter();
 
-    const onClick = () =>{
+    const handleOnClick = () =>{
         //Add authentication before push
         router.push(href);
     }
 
   return (
     <button
-        onClick={onClick} 
+        onClick={handleOnClick} 
         className="
                 relative
                 group flex
