@@ -11,8 +11,6 @@ interface MediaItemProps{
 const MediaItem: React.FC<MediaItemProps> = ({ onClick, data }) => {
     const imageUrl = useLoadImage(data);
 
-    console.log("meu console errorooooooo", data.id);
-
     const handleClick = () =>{
         if(onClick){
             return onClick(data.id);
